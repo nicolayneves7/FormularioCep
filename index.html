@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulário</title>
+
+</head>
+<body>
+    <div class="container">
+        <h1>Consulta de CEP</h1>
+
+        <div class="grupoCep">
+            <div class="grupoCampos">
+                <label for="cep">CEP</label>
+                <input type="text" id="cep" maxlength="8" placeholder="Ex: 05077051">
+            </div>
+            <button id="btnBuscar">Buscar</button>
+        </div>
+
+        <div class="grupoCampos">
+            <label for="logradouro">Logradouro</label>
+            <input type="text" id="logradouro" readonly>
+        </div>
+
+        <div class="grupoCampos">
+            <label for="bairro">Bairro</label>
+            <input type="text" id="bairro" readonly>
+        </div>
+
+        <div class="grupoPequenos">
+            <div class="grupoCampos">
+                <label for="cidade">Cidade</label>
+                <input type="text" id="cidade" readonly>
+            </div>
+
+            <div class="grupoCampos">
+                <label for="estado">Estado</label>
+                <input type="text" id="estado" readonly>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>

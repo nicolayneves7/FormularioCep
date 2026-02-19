@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #F0F4F8;
+    --secondary-color: #FFFFFF;
+    --shadow-color: #AAAAAA;
+    --label-color: #ca075f;
+    --input-border-color: #00549e;
+    --input-readonly-color: #e6e7e7;
+    --input-readonly-text-color: #606060;
+    --button-hover: #037de8;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    padding: 40px 16px;
+}
+
+.container{
+    background-color: var(--secondary-color);
+    border-radius: 12px;
+    box-shadow: 0 4px 20px var(--shadow-color);
+    padding: 40px;
+    width: 100%;
+    max-width: 500px;
+}
+
+h1 {
+    margin-bottom: 24px;
+}
+
+.grupoCep {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 24px;
+    align-items: flex-end;
+}
+
+.grupoCampos {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.grupoPequenos {
+    display: flex;
+    gap: 16px;
+}
+
+label {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--label-color);
+    margin-bottom: 6px;
+}
+
+input[type="text"] {
+    border: 2px solid var(--shadow-color);
+    border-radius: 8px;
+    padding: 10px 12px;
+    font-size: 16px;
+    width: 100%;
+    outline: none;
+}
+
+input[type="text"]:focus {
+    border-color: var(--label-color);
+}
+
+input[readonly] {
+    background-color: var(--input-readonly-color);
+    color: var(--input-readonly-text-color);
+}
+
+button {
+    background-color: var(--input-border-color);
+    padding: 10px 24px;
+    color: var(--primary-color);
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--button-hover);
+}
